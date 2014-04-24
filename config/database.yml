@@ -1,0 +1,29 @@
+development: &base
+  adapter: postgresql
+  encoding: utf8
+  database: calendar_development
+  pool: 40
+  hostname: localhost
+  host: localhost
+  port: 5433
+  username: help
+  password: help3
+  timeout: 5000
+
+travis: &travis
+  adapter: sqlite3
+  database: ':memory:'
+  timeout: 500
+
+test:
+  <<: *<%= ENV['TRAVIS'] ? 'travis' : 'base' %>
+  database: '<%= ENV['TRAVIS'] ? ':memory:' : "calendar_test#{ENV['TEST_ENV_NUMBER']}" %>'
+
+production:
+  <<: *base
+  database: calendar_production
+
+staging:
+  <<: *base
+  database: calendar_staging
+
