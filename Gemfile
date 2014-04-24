@@ -11,6 +11,7 @@ gem 'flutie'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'neat'
+gem 'refills', github: 'thoughtbot/refills'
 gem 'pg'
 gem 'rack-timeout'
 gem 'rails', '>= 4.1.0'
@@ -24,6 +25,8 @@ gem 'sass'
 gem 'simple_form'
 gem 'title'
 gem 'uglifier'
+
+gem 'slim'
 
 # Unicorn is very good and robust, but somehow I like puma in development
 #gem 'unicorn'
