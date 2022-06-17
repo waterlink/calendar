@@ -1,8 +1,8 @@
 GIT
-  remote: git://github.com/thoughtbot/refills.git
-  revision: 357c4fe98b6d0c2087c00e4081fc3db826ffdf72
+  remote: https://github.com/thoughtbot/refills.git
+  revision: e3804a4ae97d187e5c139e3619ef3301ef2a10d7
   specs:
-    refills (0.0.1)
+    refills (0.2.0)
 
 GEM
   remote: http://rubygems.org/
@@ -60,6 +60,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    concurrent-ruby (1.1.9)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     database_cleaner (1.2.0)
@@ -90,7 +91,8 @@ GEM
       thor (>= 0.13.6)
     high_voltage (2.1.0)
     hike (1.2.3)
-    i18n (0.6.9)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
